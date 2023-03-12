@@ -1,0 +1,90 @@
+#technology-background{
+    width:100%;
+    height:110%;
+    background-image:url("../../public/images/technology/background-technology-desktop.jpg");
+    background-size:cover;
+    padding-bottom:3%;
+}
+.technology-header{
+    margin-left:5%;
+    margin-bottom:4%;
+    font-size:30px;
+    font-weight:bolder;
+}
+.technology-header .marker{
+    color:grey;
+}
+.tech-tabs-parent-wrapper{
+    margin:7% auto;
+    width:80%;
+    display:flex;
+    justify-content:space-between;
+}
+.tech-style-tab.nav-link{
+    border-radius:100%;
+    border:2px solid white;
+    font-size:25px;
+    margin-bottom:30%;
+    color:white;
+}
+.tech-tabs-wrapper{
+    width:10%;
+    justify-content:center;
+    flex-direction:column;
+}
+.tech-tabs-wrapper.nav.nav-tabs{
+    border-bottom:none;
+}
+.tab-content{
+    width:85%;
+}
+.tab-content .content-wrapper{
+    display:flex;
+    justify-content:space-between;
+    padding:5%;
+}
+.tab-content .content-wrapper .technology-content{
+    width:45%;
+}
+.tab-content .content-wrapper .technology-content h1{
+    font-size:40px;
+    font-weight:bolder;
+}
+.tab-content .content-wrapper .technology-content p{
+    font-size:20px;
+}
+.tab-content .content-wrapper .technology-image{
+    width:50%;
+}
+.tab-content .content-wrapper .technology-image img{
+    width:100%;
+    height:40vh;
+}
+@media only screen and (max-width:900px){
+    #technology-background{
+        background-image:url("../../public/images/technology/background-technology-mobile.jpg");
+    }
+    .tech-tabs-parent-wrapper{
+        flex-direction:column;
+    }
+    .tech-tabs-wrapper{
+        width:100%;
+        flex-direction:row;
+    }
+    .tab-content{
+        width:100%;
+    }
+    .tab-content .content-wrapper{
+        flex-direction:column-reverse;
+    }
+    .tab-content .content-wrapper .technology-content{
+        width:100%;
+    }
+    .tab-content .content-wrapper .technology-image{
+        width:100%;
+        margin-bottom:7%;
+    }
+    .tab-content .content-wrapper .technology-image img{
+        height:25vh;
+    }
+}

@@ -1,0 +1,92 @@
+#home-background{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-image:url("../../public/images/home/background-home-desktop.jpg");
+    padding-bottom:7%
+}
+
+.content{
+    width:80%;
+    margin:10% auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.home-banner{
+    width:60%;
+}
+
+.home-banner h3{
+    font-size:25px;
+    font-weight:lighter
+}
+
+.home-banner h1{
+    font-size:120px;
+    letter-spacing: 4px;
+}
+
+.home-banner p{
+    font-size:20px;
+    font-weight:lighter;
+}
+
+.content .explore{
+    width:300px;
+    height:300px;
+    font-size:50px;
+    background-color:white;
+    text-align:center;
+    border-radius:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all 0.3s ease-in;
+    cursor:pointer;
+}
+
+.content .explore:hover{
+    opacity:0.5;
+}
+
+.content .explore .link{
+    text-decoration:none;
+    color:black;
+}
+
+.home-banner h1,
+.home-banner h3,
+.home-banner p,
+.content .explore{
+    font-weight:bolder;
+}
+
+@media only screen and (max-width:900px){
+    #home-background{
+        background-image:url("../../public/images/home/background-home-mobile.jpg")
+    }
+    .content{
+        flex-direction:column
+    }
+    .home-banner{
+        width:100%;
+        text-align:center;
+        margin-bottom:30%;
+    }
+    .home-banner h1{
+        font-size:80px;
+    }
+    .home-banner h1,
+    .home-banner h3,
+    .home-banner p{
+        font-weight:bolder;
+    }
+    .content .explore{
+        width:200px;
+        height:200px;
+        font-size:35px;
+        font-weight:bolder;
+    }
+}

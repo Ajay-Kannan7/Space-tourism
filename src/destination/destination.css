@@ -1,0 +1,100 @@
+#destination-background{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-image:url("../../public/images/destination/background-destination-desktop.jpg");
+    padding-bottom:5%;
+}
+.destination-header{
+    margin-left:5%;
+    margin-bottom:4%;
+    font-size:30px;
+    font-weight:bolder;
+}
+.destination-header .marker{
+    color:grey;
+}
+.tabs-wrapper{
+    width:90%;
+    margin:0 auto;
+    font-size:18px;
+    justify-content:right;
+    font-weight:bolder;
+}
+.tabs-wrapper.nav.nav-tabs{
+    border-bottom:none;
+    margin-bottom:5%;
+}
+.style-tab.nav-link{
+    color:white;
+}
+.style-tab.nav-link:hover{
+    color:white;
+}
+.tab-content{
+    width:90%;
+    margin:0 auto;
+}
+.tab-content .content-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.tab-content .content-wrapper .destination-image{
+    width:45%;
+}
+.tab-content .content-wrapper .destination-image img{
+    width:100%;
+}
+.tab-content .content-wrapper .destination-content{
+    width:50%;
+}
+.tab-content .content-wrapper .destination-content .planet-content{
+    border-bottom:2px solid white;
+    margin-bottom:5%;
+}
+.tab-content .content-wrapper .destination-content .planet-content h1{
+    font-size:55px;
+    font-weight:bolder;
+}
+.tab-content .content-wrapper .destination-content .planet-content p{
+    font-size:20px;
+}
+.tab-content .content-wrapper .destination-content .planet-numbers{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+.tab-content .content-wrapper .destination-content .planet-numbers h3{
+    font-weight:bolder;
+    font-size:20px;
+}
+.tab-content .content-wrapper .destination-content .planet-numbers p{
+    font-size:35px;
+}
+@media only screen and (max-width:900px){
+    #destination-background{
+        background-image:url("../../public/images/destination/background-destination-mobile.jpg");
+    }
+    .tab-content .content-wrapper{
+        flex-direction:column;
+        margin-top:15%;
+    }
+    .tab-content .content-wrapper .destination-image{
+        width:100%;
+        margin-bottom:15%;
+    }
+    .tab-content .content-wrapper .destination-content{
+        width:100%;
+    }
+    .tabs-wrapper{
+        justify-content:center;
+        margin-top:15%;
+    }
+    .tab-content .content-wrapper .destination-content .planet-numbers h3{
+        font-size:15px;
+    }
+    .tab-content .content-wrapper .destination-content .planet-numbers p{
+        font-size:18px;
+    }
+}

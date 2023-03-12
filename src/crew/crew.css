@@ -1,0 +1,67 @@
+/* body{
+    background-image:url("../../public/images/crew/background-crew-desktop.jpg")
+} */
+
+#crew-background{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-image:url("../../public/images/crew/background-crew-desktop.jpg");
+    padding-bottom:7%;
+}
+
+.crew-page .crew-header{
+    margin-left:5%;
+    margin-bottom:4%;
+    font-size:30px;
+    font-weight:bolder;
+}
+.crew-page .crew-header .marker{
+    color:grey;
+}
+.crew-page .carousel{
+    width:90%;
+    margin:5% auto;
+}
+.slick-initialized .slick-slide .carousel-page{
+    display:flex !important;
+    justify-content:space-around;
+}
+.slick-initialized .slick-slide .carousel-page .carousel-image{
+    width:30%;
+    height:70vh;
+}
+.slick-initialized .slick-slide .carousel-page .carousel-image img{
+    width:100%;
+}
+.slick-initialized .slick-slide .carousel-page .carousel-content{
+    width:45%;
+}
+.slick-initialized .slick-slide .carousel-page .carousel-content h3{
+    font-size:25px;
+    font-weight:bolder;
+    color:grey;
+}
+.slick-initialized .slick-slide .carousel-page .carousel-content h1{
+    font-size:60px;
+    font-weight:bolder;
+}
+.slick-initialized .slick-slide .carousel-page .carousel-content p{
+    font-size:20px;
+}
+@media only screen and (max-width:900px){
+    .slick-initialized .slick-slide .carousel-page{
+        flex-direction:column;
+    }
+    .slick-initialized .slick-slide .carousel-page .carousel-content{
+        width:90%;
+        margin-top:20%;
+    }
+    .slick-initialized .slick-slide .carousel-page .carousel-content h1{
+        font-size:30px;
+    }
+    .slick-initialized .slick-slide .carousel-page .carousel-image{
+        width:100%;
+        margin-top:20%;
+    }
+}

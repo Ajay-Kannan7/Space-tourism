@@ -1,0 +1,93 @@
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+  
+  .main-wrapper{
+    padding-top:3%;
+  }
+
+  .main-wrapper .navigation-bar{
+    width:95%;
+    margin:0 auto;
+    margin-bottom:5%;
+    font-size:18px;
+    justify-content:space-between;
+  }
+  
+  .main-wrapper .navigation-bar .logo{
+    width:6%;
+    float:left;
+    display:block;
+  }
+  
+  .main-wrapper .navigation-bar nav{
+    width:55%;
+    display:flex;
+    font-weight: bold;
+    justify-content:space-evenly;
+    align-items:center;
+    backdrop-filter: blur(15px);
+    padding:2%;
+    border:3px solid white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    float:right;
+  }
+  
+  .main-wrapper .navigation-bar nav .nav-link{
+    display:block;
+    text-decoration:none;
+    position:relative;
+    color:white;
+  }
+  
+  .main-wrapper .navigation-bar nav .nav-link::after{
+    content:"";
+    width:90%;
+    height:5px;
+    background-color:white;
+    position:absolute;
+    top:100%;
+    left:0;
+    border-radius:20px;
+    transition:all 0.5s ease-in;
+  }
+  .main-wrapper .navigation-bar nav .inactive{
+    text-decoration:none;
+    color:white;
+  }
+  
+  .main-wrapper .navigation-bar .icon{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    float:right;
+  }
+  
+  @media only screen and (max-width:900px){
+    .main-wrapper .navigation-bar .logo{
+      width:15%;
+    }
+    .main-wrapper .navigation-bar nav{
+      width:95%;
+      display:none;
+      border-radius:20px;
+      flex-direction:column;
+      text-align:center;
+      margin-top:7%;
+    }
+    .main-wrapper .navigation-bar nav.toggle{
+      display:flex;
+    }
+    .main-wrapper .navigation-bar nav .nav-link,
+    .main-wrapper .navigation-bar nav .inactive{
+      margin-bottom:7%;
+      margin-top:4%;
+      font-size:22px;
+    }
+    .main-wrapper .navigation-bar .icon{
+      display:block;
+    }
+  }
